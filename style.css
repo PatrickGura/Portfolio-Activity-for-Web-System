@@ -61,7 +61,7 @@ ul li {
     margin: 5px 0;
 }
 
-/* Button */
+/* Buttons */
 button {
     padding: 10px 15px;
     background-color: #222;
@@ -73,6 +73,12 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+/* Typing role effect */
+#role {
+    color: #00bcd4;
+    font-weight: bold;
 }
 
 /* Footer */
