@@ -1,5 +1,5 @@
 function showMessage() {
-    alert("Thank you for visiting my portfolio!");
+    alert("Contact me on my email: patrick.gura@urios.edu.ph");
 }
 
 const roles = ["IT Student", "Future Developer", "Tech Enthusiast"];
