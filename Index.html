@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Patrick Gura</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,17 +14,20 @@
     <a href="projects.html">Projects</a>
 </nav>
 
-<header>
-    <h1>Welcome to my portfolio</h1>
-    <p>HI! My name is Patrick Gura and I am a student trying to learn about web development</p>
+<header class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Patrick Gura</h1>
+            <h2>I am an <span id="role"></span></h2>
+            <p>Information Technology student passionate about networking, system configuration, and web development.</p>
+            <button onclick="showMessage()">Contact Me</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Patrick Gura">
+        </div>
+    </div>
 </header>
-
-<section>
-    <h2>I am a <span id="role"></span></h2>
-    <p>This website showcases my skills, projects, and background in Information Technology.</p>
-
-    <button onclick="showMessage()">Click Me</button>
-</section>
 
 <footer>
     <p>© 2026 Patrick Gura</p>

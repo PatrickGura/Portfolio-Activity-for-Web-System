@@ -1,10 +1,8 @@
-// Show a welcome alert when the button is clicked
 function showMessage() {
     alert("Thank you for visiting my portfolio!");
 }
 
-// Typing animation for roles
-const roles = ["IT Student", "FSUU student", "Future Developer"];
+const roles = ["IT Student", "Future Developer", "Tech Enthusiast"];
 let roleIndex = 0;
 let charIndex = 0;
 
@@ -15,7 +13,7 @@ function typeRole() {
     if (charIndex < roles[roleIndex].length) {
         el.textContent += roles[roleIndex][charIndex];
         charIndex++;
-        setTimeout(typeRole, 150);
+        setTimeout(typeRole, 120);
     } else {
         setTimeout(eraseRole, 1000);
     }
@@ -28,12 +26,13 @@ function eraseRole() {
     if (charIndex > 0) {
         el.textContent = roles[roleIndex].substring(0, charIndex - 1);
         charIndex--;
-        setTimeout(eraseRole, 100);
+        setTimeout(eraseRole, 60);
     } else {
         roleIndex = (roleIndex + 1) % roles.length;
         setTimeout(typeRole, 500);
     }
 }
 
-// Start typing animation on page load
-window.onload = typeRole;
+window.onload = function () {
+    typeRole();
+};
