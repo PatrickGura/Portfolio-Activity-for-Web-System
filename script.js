@@ -1,5 +1,5 @@
 function showMessage() {
-    alert("Contact me on my email: patrick.gura@urios.edu.ph");
+    alert("Email: patrick.gura@urios.edu.ph\nPhone: 09692008709\nLocation: Butuan City");
 }
 
 const roles = ["IT Student", "Future Developer", "Tech Enthusiast"];
